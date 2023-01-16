@@ -1,0 +1,10 @@
+.travel-screen_type {
+    margin: -10px 0 20px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.box-content-button {
+    max-width: 148px;
+}

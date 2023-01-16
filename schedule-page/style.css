@@ -1,0 +1,31 @@
+.box-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.schedule-screen_date {
+    margin: -10px 0 20px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.box-content-button {
+    max-width: 230px;
+}
+
+@media all and (max-width: 800px) {
+    .box-header {
+        padding: 60px 10px 20px;
+    }
+
+    .box-sections {
+        padding-bottom: 20px;
+    }
+
+    .box-sections .box-section {
+        padding: 10px;
+        border: none !important;
+    }
+}
