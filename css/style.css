@@ -1,0 +1,247 @@
+/* HOME PAGE START */
+
+.main-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/bg-dark.jpg");
+}
+
+.main-screen_text {
+  text-align: center;
+  font-size: 72px;
+  color: #fff;
+}
+
+.info-screen_names {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 100px 0;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.info-screen_names_name {
+  font-size: 42px;
+}
+
+.info-screen_names_separator {
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.info-screen_names_name, .info-screen_names_separator {
+  margin: 0 20px;
+  letter-spacing: 1px;
+}
+
+.info-screen_summary {
+  padding: 100px 0;
+}
+
+.info-screen_summary_date {
+  margin-bottom: 28px;
+  font-size: 42px;
+  letter-spacing: 1px;
+}
+
+.info-screen_summary_place {
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.photo-screen {
+  background-image: url("../img/bg-dark.jpg");
+}
+
+@media all and (max-width: 800px) {
+  .main-screen_text {
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+  }
+
+  .info-screen_names {
+    flex-direction: column;
+    padding: 40px 0;
+  }
+
+  .info-screen_names_name, .info-screen_names_separator {
+    margin: 10px 0;
+    letter-spacing: 1px;
+  }
+}
+
+/* HOME PAGE END */
+
+/* SCHEDULE PAGE START */
+
+.schedule-screen .box-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.schedule-screen_date {
+  margin: -10px 0 20px;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.schedule-screen .box-content-button {
+  max-width: 230px;
+}
+
+@media all and (max-width: 800px) {
+  .schedule-screen .box-header {
+    padding: 60px 10px 20px;
+  }
+
+  .schedule-screen .box-sections {
+    padding-bottom: 20px;
+  }
+
+  .schedule-screen .box-sections .box-section {
+    padding: 10px;
+    border: none !important;
+  }
+}
+
+/* TRAVEL PAGE START */
+
+.travel-screen_type {
+  margin: -10px 0 20px;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.travel-screen .box-content-button {
+  max-width: 148px;
+}
+
+/* TRAVEL PAGE END */
+
+/* TO-DO PAGE START */
+
+.to-do-screen_map {
+  width: 100%;
+  margin-bottom: 60px;
+  padding: 0 60px;
+}
+
+.to-do-screen_map img {
+  width: 100%;
+}
+
+.to-do-screen .box-content-button {
+  max-width: 148px;
+}
+
+@media all and (max-width: 800px) {
+  .to-do-screen_map {
+    padding: 0 10px;
+  }
+}
+
+/* TO-DO PAGE END */
+
+/* FAQS PAGE START */
+
+.faq {
+  width: 100%;
+}
+
+.faq_title {
+  margin-bottom: 20px;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.faq_question {
+  font-size: 38px;
+}
+
+.faq_answer {
+  font-size: 19px;
+  line-height: 26px;
+}
+
+.faq-screen .box-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media all and (max-width: 800px) {
+  .faq-screen .box-sections .box-section:nth-child(2n) {
+    border-top: none;
+    padding-top: 0;
+  }
+}
+
+/* FAQS PAGE END */
+
+/* RSVP PAGE START */
+
+.rsvp-screen {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.rsvp-screen_text {
+  max-width: 672px;
+  width: 100%;
+  margin: 0 auto 30px;
+  font-size: 19px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.rsvp-screen_text:first-child {
+  margin-bottom: 80px;
+}
+
+.rsvp-screen form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.rsvp-screen input {
+  width: 100%;
+  height: 40px;
+  margin-right: 40px;
+  padding: 8px 12px;
+}
+
+.rsvp-screen .button-submit {
+  height: 40px;
+  padding: 8px;
+  border: none;
+  background-color: #d9d9d9;
+  color: #505050;
+  text-transform: uppercase;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2.3px;
+}
+
+@media all and (max-width: 800px) {
+  .rsvp-screen form {
+    flex-direction: column;
+  }
+
+  .rsvp-screen input {
+    margin: 0 0 20px;
+  }
+}
+
+/* RSVP PAGE END */

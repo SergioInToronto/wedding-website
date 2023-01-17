@@ -265,7 +265,7 @@ footer {
         width: 40px;
         height: 30px;
         z-index: 2;
-        background: url("../common/images/burger-menu.png") center no-repeat;
+        background: url("../img/burger-menu.png") center no-repeat;
         background-size: contain;
     }
 
@@ -285,7 +285,7 @@ footer {
     }
 
     .header_burger-menu.active {
-        background-image: url("../common/images/cross.png");
+        background-image: url("../img/cross.png");
     }
 
     .header_burger-menu.active + .menu {
