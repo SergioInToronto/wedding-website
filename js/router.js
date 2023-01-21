@@ -3,12 +3,12 @@ const TEMPLATE_PATH = './templates';
 const ROUTES = {
     '/': {
         template: `${TEMPLATE_PATH}/index.html`,
-        title: 'Home',
+        // title: 'Home',
         description: 'This is the home page',
     },
     '/schedule': {
         template: `${TEMPLATE_PATH}/schedule.html`,
-        title: 'Wedding Schedule',
+        title: 'Schedule',
         description: 'This is the about page',
     },
     '/travel': {
@@ -16,9 +16,9 @@ const ROUTES = {
         title: 'Travel',
         description: 'This is the about page',
     },
-    '/to-do': {
-        template: `${TEMPLATE_PATH}/to-do.html`,
-        title: 'To Do',
+    '/todo': {
+        template: `${TEMPLATE_PATH}/todo.html`,
+        title: 'Things To Do',
         description: 'This is the about page',
     },
     '/faqs': {
@@ -32,6 +32,8 @@ const ROUTES = {
         description: 'This is the about page',
     },
 };
+
+const BASE_TITLE = "Gaby's & Sergio's Wedding";
 
 document.addEventListener('click', event => {
     if (!event.target.matches('nav a')) {
@@ -65,7 +67,7 @@ const locationHandler = async () => {
 
     document.getElementById('page-content').innerHTML = html;
 
-    document.title = title;
+    document.title = title ? `${BASE_TITLE} - ${title}` : BASE_TITLE
 
     document.querySelector('meta[name="description"]')
         .setAttribute('content', description);
