@@ -160,7 +160,8 @@
 }
 
 .header {
-    position: relative;
+    position: sticky;
+    top: 0;
     padding: 20px 20px 10px;
     text-align: center;
     background: #fff;
@@ -212,6 +213,15 @@
     text-decoration: underline;
 }
 
+.header.sticky {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.header.sticky .header_date, .header.sticky .header_title {
+    display: none;
+}
+
 footer {
     height: 100px;
 }
@@ -243,9 +253,7 @@ footer {
     }
     
     .header {
-        position: sticky;
-        top: 0;
-        padding: 10px;
+        padding: 10px !important;
     }
 
     .header_date {
@@ -253,6 +261,7 @@ footer {
     }
 
     .header_title {
+        display: block !important;
         margin-bottom: 0;
         font-size: 26px;
     }
