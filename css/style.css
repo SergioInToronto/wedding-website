@@ -4,13 +4,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../img/bg-dark.jpg");
+  background-image: url("../img/city1.jpg");
 }
 
 .main-screen_text {
   text-align: center;
   font-size: 72px;
   color: #fff;
+  text-shadow: black 1px 1px 4px;
 }
 
 .info-screen_names {

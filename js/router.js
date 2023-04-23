@@ -2,7 +2,7 @@ const TEMPLATE_PATH = './templates';
 
 const ROUTES = {
     '/': {
-        template: `${TEMPLATE_PATH}/index.html`,
+        template: `${TEMPLATE_PATH}/home.html`,
         // title: 'Home',
         description: 'This is the home page',
     },
@@ -56,14 +56,11 @@ const route = (event) => {
 };
 
 const locationHandler = async () => {
-    const location = window.location.pathname;
+    const path = window.location.pathname;
 
-    const routeName = location.length !== 0 ? location : '/';
+    const { template, title, description } = ROUTES[path] ?? ROUTES['/'];
 
-    const { template, title, description } = ROUTES[routeName] ?? ROUTES['404'];
-
-    const html = await fetch(template)
-        .then((response) => response.text());
+    const html = await fetch(template).then((response) => response.text());
 
     document.getElementById('page-content').innerHTML = html;
 
