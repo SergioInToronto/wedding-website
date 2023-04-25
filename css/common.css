@@ -18,9 +18,9 @@
     width: 100%;
     height: 40px;
     margin: 0 auto;
-    border: solid 2px #141414;
+    border: solid 2px #45604a;
     background: #fff;
-    color: #141414;
+    color: #45604a;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight: 600;
@@ -32,7 +32,7 @@
 }
 
 .button:hover {
-    background: #141414;
+    background: #45604a;
     color: #fff;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .box-screen {
-    background: #fff7e6;
+    background: #ffc1a870;
     padding: 60px 20px;
 }
 
@@ -104,6 +104,7 @@
     padding: 0 10px;
     font-size: 42px;
     letter-spacing: 1px;
+    color: #45604a
 }
 
 .box-header p {
@@ -136,6 +137,7 @@
     margin-bottom: 30px;
     font-size: 38px;
     letter-spacing: 1px;
+    color: #45604a
 }
 
 .box-content-item {
@@ -181,6 +183,7 @@
     font-size: 42px;
     font-weight: 400;
     letter-spacing: 1px;
+    color: #45604a;
 }
 
 .header_burger-menu {
