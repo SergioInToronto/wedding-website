@@ -35,9 +35,14 @@ const ROUTES = {
 
 const BASE_TITLE = "Gaby's & Sergio's Wedding";
 
+function shouldHandleRoute(target) {
+  return target.matches('nav a') || target.matches('a.nav');
+}
+
 document.addEventListener('click', event => {
   // if (!event.target.matches('nav a')) {
-  if (!Object.keys(ROUTES).includes(event.target.pathname)) {
+  // if (!Object.keys(ROUTES).includes(event.target.pathname)) {
+  if (!shouldHandleRoute(event.target)) {
     return;
   }
 
@@ -46,7 +51,7 @@ document.addEventListener('click', event => {
 });
 
 function route(event) {
-  event = event || window.event; // get window.event if event argument not provided
+  event = event || window.event;
 
   event.preventDefault();
 
