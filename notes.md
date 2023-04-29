@@ -1,3 +1,25 @@
+
+
+
+
+
+- (abandoned idea) Use CSS grid to center align names - branch: css-grid-for-names
+    except on mobile where they should stack again.
+    should be able to change `inline-grid` to just `grid`
+
+
+
+
+
+
+
+
+
+
+# Junk
+
+
+
 zona romántica, puerto vallarta
 zona Centro, Puerto Vallarta
 
