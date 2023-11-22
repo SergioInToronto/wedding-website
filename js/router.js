@@ -9,27 +9,32 @@ const ROUTES = {
   '/schedule': {
     template: `${TEMPLATE_PATH}/schedule.html`,
     title: 'Schedule',
-    description: 'This is the about page',
+    description: '',
   },
   '/travel': {
     template: `${TEMPLATE_PATH}/travel.html`,
     title: 'Travel',
-    description: 'This is the about page',
+    description: '',
   },
   '/todo': {
     template: `${TEMPLATE_PATH}/todo.html`,
     title: 'Things To Do',
-    description: 'This is the about page',
+    description: '',
   },
   '/faqs': {
     template: `${TEMPLATE_PATH}/faqs.html`,
     title: 'FAQs',
-    description: 'This is the about page',
+    description: '',
   },
   '/rsvp': {
     template: `${TEMPLATE_PATH}/rsvp.html`,
     title: 'RSVP',
-    description: 'This is the about page',
+    description: '',
+  },
+  '/playlist': {
+    template: `${TEMPLATE_PATH}/playlist.html`,
+    title: 'Playlist',
+    description: '',
   },
 };
 
